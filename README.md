@@ -61,15 +61,18 @@ When ? When program is sharing data and have chance the data would be modified r
 
 ## 4. Counter with synchronized method
 
-answer question 4
+answer question 4 <br />
 4.1)  It always zero. 
 <br />
 4.2) synchronized not allow thread run at same time (if thread1 run thread2 is waiting.Thread2 will run when thread1 is finish) not like problem1 that thread run at the same time.
 <br />
+
 4.3) Synchronized meaning is cause to occur or operate at the same time.
 <br />
+
 Why ? Because real data and data that program execute is inconsistency.
 <br />
+
 When ? When program is sharing data and have chance the data would be modified resulting in inconsistency.
  
 ## 5. Counter with AtomicLong
