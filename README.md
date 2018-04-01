@@ -78,10 +78,22 @@ When ? When program is sharing data and have chance the data would be modified r
 ## 5. Counter with AtomicLong
 
 answer question 5
+<br />
+
+5.1) Because it atomically adds the given value and return value before next value was add.
+<br />
+
+5.2)Android Application Example: An AtomicLong is used in applications such as atomically incremented sequence numbers, and cannot be used as a replacement for a Long. 
 
 ## 6. Analysis of Results
 
 answer question 6
+<br />
+
+6.1) AtomicLong > Syncronized > ReentrantLock
+<br />
+
+6.2) ReentrantLock solutions because I can ensure that only one thread modifies the resource at any one time.
 
 ## 7. Using Many Threads (optional)
 
