@@ -26,10 +26,12 @@ The threads use the counter to add and subtract values.
 
 answer the questions (1.1 - 1.3)
 
-1.1 , 1.3) <br />
+1.1) 1.3) <br />
 It should be zero but it not always zero.
-It use same counter and it run at same time( parallel run) example Thread1 run same Time as Thread2 (Thread1 run add Thread2 run subtract at same time) if Thread1 finish first counter's value will be overwrite by Thread2 counter's value <br />
-1.2 ) <br />
+For example, When Thread1 run same Time as Thread2 (Thread1 run add Thread2 run subtract at same time) if Thread1 before Thread2 counter's value will be overwrite by Thread2 counter's value <br />
+
+1.2)
+ <br />
 Count 1 to 10,000,000 in 0.019735 sec
 Counter total is -44951866575256
 <br />
@@ -38,11 +40,14 @@ Counter total is -49989634064785
 <br />
 Count 1 to 10,000,000 in 0.021252 sec
 Counter total is -49987365023869
+
+
 ## 2. Implications for Multi-threaded Applications
 
 How might this affect real applications?  
 <br />
-Example: if withdraw using addTask and deposit using subtractTask. Then when withdraw and deposit at same time money in the bank will be minus value.
+Example: if withdraw using addTask and deposit using subtractTask. Their are 2 people test withdraw and deposit at the same time. 
+Then when person1 withdraw and person2 deposit. if deposit finish before withdraw, it will cause inconsistency. 
 
 ## 3. Counter with ReentrantLock
 
@@ -94,6 +99,7 @@ answer question 6
 <br />
 
 6.2) ReentrantLock solutions because I can ensure that only one thread modifies the resource at any one time.
+ReentrantLock supports more tool than syncronized such as interruptible lock waits, non-block-structured locks, multiple condition variables, or lock polling. So ReentrantLock is more flexible than syncronized because tool that ReentrantLock provides is more than syncronized.
 
 ## 7. Using Many Threads (optional)
 
